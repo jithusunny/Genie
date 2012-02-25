@@ -1,0 +1,47 @@
+body{
+  font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  font-size:15px;
+}
+
+.login-box {
+  font-weight:bold;
+  background-color:#ebf4fb;
+  border:solid 2px #b7ddf2;
+  margin:auto;
+  width:250px;
+  padding: 1cm;
+}
+
+#stylized label {
+  display:block;
+  text-align:left;
+  width:100px;
+}
+
+#stylized input {
+  border: 2px solid #b7ddf2;
+}
+
+#stylized input:hover {
+  border: 2px solid #bFD4D7;
+}
+
+#stylized button {
+  margin-top:10px;
+  display:block;
+  clear:both;
+  min-width: 2cm;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  height:26;
+  line-height:31px;
+  padding: 2px 2px;
+  border: 1px solid #dadada;
+  background-color: #f2f2f2;
+}
+
+#stylized button:hover {
+  font-size:12.4px;
+  border: 2px solid #CFD4D7;
+}
