@@ -6,7 +6,7 @@
 
     <body>
         <div>    
-	    <form id="stylized" name="register" method="link" action="register.php">
+	    <form name="register" method="link" action="register.php">
 	        <button type="submit">Register</button>
 	    </form>    	    
 	</div>
@@ -21,6 +21,7 @@
                 <input type="text" name="pwd" id="pwd">
                        
                 <button type="submit">Log in</button>        
+
             </form>
         </div>
     </body>
