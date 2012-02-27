@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Genie - Login</title>
-        <link href="./style/base-style.css" rel="stylesheet" type="text/css" />
+        <link href="style/base-style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>

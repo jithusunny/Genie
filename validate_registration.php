@@ -1,10 +1,16 @@
-<html>
-<head>
+<?php
+require('function/dbconf.php');
 
-</head>
+$username = $_POST['uname'];
+$password = $_POST['pwd'];
 
+// echo $username , $password ;
 
-<body>
-This page tells whether the registration was complete or errors were there, etc..
-</body>
-</html>
+$sql = 'INSERT INTO `genie`.`g_user` (`u_id`, `uname`, `password`) VALUES (NULL, \''.$username.'\', \''.$password.'\');'; 
+
+if (!mysql_query($sql))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "1 record added";
+?>
