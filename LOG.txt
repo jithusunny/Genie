@@ -12,3 +12,9 @@
 
 -- Need to use either windows or linux . I Prefer windows .
 So @jithu changes your desktop env to windows . Do not stick to Linux . 
+
+[Debug Tool]
+
+I used "firebug" in FireFox to <Debug> . Its a much needed tool to familiarize .
+If you are not familiarized . Use it today itself . If you are interested in web
+designing
