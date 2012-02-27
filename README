@@ -7,7 +7,8 @@ Webtop - http://en.wikipedia.org/wiki/Web_desktop
 
 index.php - Page the server loads by default.
 register.php - Where new users register.
-webtop.php - Where the users get to use the WEBTOP.
+checklogin.php - Where the users get to use the WEBTOP.
+validate_registration.php - 
 
 
 [Credits]

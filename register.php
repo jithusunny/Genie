@@ -1,5 +1,4 @@
 <html>
-<h1>Registration Page[Optional]</h1>
-
-Registration in a separate page like this or use AJAX to show register window in the home page itself.
+<h1>Registration Page</h1>
+<h2> Fill up the following to register </h2>
 </html>
