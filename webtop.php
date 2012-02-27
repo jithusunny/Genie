@@ -1,10 +1,29 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="base-style.css"/>
+<?php
+require('function/dbconf.php');
 
-</head>
-<h1> THE WEBTOP! </h1>
-Ithanu sthalam.
-</br>
-This is the playground.
-</html>
+$username = $_POST['uname'];
+$password = $_POST['pwd'];
+
+//echo $username , $password ;
+
+$sql = 'SELECT password FROM `g_user` WHERE uname=\''.$username.'\'';
+$res = mysql_query($sql);
+$row = mysql_fetch_array($res);
+
+//echo $row['password'];
+if($row == '')
+{ 
+die('Not registered');
+}
+elseif ($row['password']==$password)
+{
+echo "Successful Login";
+}
+else
+{
+echo "Wrong Username/Password";
+}
+
+
+
+?>

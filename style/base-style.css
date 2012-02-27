@@ -1,80 +1,44 @@
 body{
-font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
-font-size:13px;
+  font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  font-size:15px;
 }
 
-p, h1, form{border:0; margin:0; padding:0;}
-
-button {
-margin:0 auto;
-clear:both;
-width:125px;
-height:31px;
-background:#4D4E5C;
-text-align:center;
-line-height:31px;
-color:#FFFFFF;
-font-size:12px;
-font-weight:bold;
+.login-box {
+  font-weight:bold;
+  background-color:#ebf4fb;
+  border:solid 2px #b7ddf2;
+  margin:auto;
+  width:250px;
+  padding: 1cm;
 }
 
-/* ----------- Login-Box ----------- */
-.login-box{
-margin:0 auto;
-width:400px;
-padding:14px;
-border:solid 2px #b7ddf2;
-background:#ebf4fb;
+#stylized label {
+  display:block;
+  text-align:left;
+  width:100px;
 }
 
-/* ----------- stylized ----------- */
-
-#stylized h1 {
-font-size:14px;
-font-weight:bold;
-margin-bottom:8px;
+#stylized input {
+  border: 2px solid #b7ddf2;
 }
 
-#stylized p{
-font-size:11px;
-color:#666666;
-margin-bottom:20px;
-border-bottom:solid 1px #b7ddf2;
-padding-bottom:10px;
-}
-
-#stylized label{
-display:block;
-font-weight:bold;
-text-align:right;
-width:140px;
-float:left;
-}
-
-#stylized .small{
-color:#666666;
-display:block;
-font-size:11px;
-font-weight:normal;
-text-align:right;
-width:140px;
-}
-
-#stylized input{
-float:left;
-font-size:12px;
-padding:4px 2px;
-border:solid 1px #aacfe4;
-width:200px;
-margin:2px 0 20px 10px;
-}
-
-stylized input:hover {
+#stylized input:hover {
   border: 2px solid #bFD4D7;
 }
 
-#stylized button{
-margin-left:149px;
+#stylized button {
+  margin-top:10px;
+  display:block;
+  clear:both;
+  min-width: 2cm;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  height:26;
+  line-height:31px;
+  padding: 2px 2px;
+  border: 1px solid #dadada;
+  background-color: #f2f2f2;
 }
 
 #stylized button:hover {
