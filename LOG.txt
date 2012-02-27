@@ -1,0 +1,14 @@
+[27/02/2012]
+[Anoop Toffy]
+
+- Script for basic login 
+-- Script for Basic Registration
+--- Used MYSQL DB
+---- Used Windows system . So if you are using Linux file path need not match
+------ Used USBWEBSERVER {http://www.usbwebserver.net/en/}
+--- Ajax script in progress
+
+[ALARm]
+
+-- Need to use either windows or linux . I Prefer windows .
+So @jithu changes your desktop env to windows . Do not stick to Linux . 
