@@ -12,7 +12,7 @@
 	</div>
 	                
         <div id="stylized" class="login-box">    
-            <form id="form" name="form" method="post" action="webtop.php">
+            <form id="form" name="form" method="post" action="checklogin.php">
             
                 <label>Username:</label>
                 <input type="text" name="uname" id="uname">
