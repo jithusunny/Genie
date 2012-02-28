@@ -21,7 +21,7 @@
             		<form id="form" name="login-form" action="webtop.php" method="post">
             
                 		<label>Username:</label>
-                		<input type="text" name="uname" id="uname" value="user">
+                		<input type="text" name="uname" id="uname">
                 
                 		<label>Password:</label>
                 		<input type="password" name="pwd" id="pwd">
