@@ -12,9 +12,8 @@ $(document).ready(function() {
 			success: function(response)
 			{
 				if(response == 'success') {
-					$('#page').load('webtop.php');
-//					$("#login_response").text("You have logged in successfully!");
-					return true;}
+					document.location.href = 'webtop.php';
+				}
 				else	{
 					$("#login_response").text("Invalid username and/or password.");
 					return false;}
