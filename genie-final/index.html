@@ -7,9 +7,7 @@
 <title>Genie</title>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/desktop.css" />
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="assets/css/ie.css" />
-<![endif]-->
+
 </head>
 <body>
 <div class="abs" id="wrapper">
@@ -17,6 +15,10 @@
     <a class="abs icon" style="left:20px;top:20px;" href="#icon_dock_computer">
       <img src="assets/images/icons/icon_32_computer.png" />
       Computer
+    </a>
+	<a class="abs icon" style="left:20px;top:100px;" href="#icon_dock_drive">
+      <img src="assets/images/icons/icon_22_fb.png" />
+      Facebook
     </a>
     <div id="window_computer" class="abs window">
       <div class="abs window_inner">
@@ -106,12 +108,38 @@
           </div>
         </div>
         <div class="abs window_bottom">
-          By Project Syn3rgy Team
+          By Project Syn3energy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
     
+	<div id="window_drive" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_22_fb.png" />
+            Facebook
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_drive" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+       		
+        </div>
+		<div class="abs window_bottom">
+          By Project Syn3energy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+
+	
+	
+	
   </div>
   <div class="abs" id="bar_top">
     <span class="float_right" id="clock"></span>
@@ -144,7 +172,7 @@
         <a class="menu_trigger" href="#">Credits</a>
         <ul class="menu">
           <li>
-            <a href="#">Project Syn3rgy Team</a>
+            <a href="#">Project Syn3ergy Team</a>
           </li>
         </ul>
       </li>
@@ -153,6 +181,8 @@
 	
   </div>
   <div class="abs" id="bar_bottom">
+	<a class="float_right" href="#">Sign Out</a>
+	
     <a class="float_left" href="#" id="show_desktop" title="Show Desktop">
       <img src="assets/images/icons/icon_22_desktop.png" />
     </a>
@@ -163,11 +193,21 @@
           Computer
         </a>
       </li>
+	  
+	  <li id="icon_dock_drive">
+        <a href="#window_drive">
+          <img src="assets/images/icons/icon_22_fb.png" />
+          Facebook
+        </a>
+      </li>
+	  
     </ul>
   </div>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+
+
 <script>
   !window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery.js"%3E%3C/script%3E'));
   !window.jQuery.ui && document.write(unescape('%3Cscript src="assets/js/jquery.ui.js"%3E%3C/script%3E'));
@@ -180,9 +220,10 @@
     var g = d.createElement(t),
     s = d.getElementsByTagName(t)[0];
     g.async = true;
-    g.src = '//www.google-analytics.com/ga.js';
+    g.src = '//assets/js/ga.js';
     s.parentNode.insertBefore(g, s);
   })(this.document, 'script');
 </script>
+
 </body>
 </html>
