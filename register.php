@@ -1,6 +1,6 @@
 <html>
  <head>
-        <title>Genie - Login</title>
+        <title>Genie - Register</title>
         <link href="style/base-style.css" rel="stylesheet" type="text/css" />
     </head>
 <body>
