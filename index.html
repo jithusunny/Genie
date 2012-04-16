@@ -1,37 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
     <head>
-        <title>Ajax Login in php using jquery's fading effects</title>
+        <title>Genie</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
         <script src="scripts/jquery.js" type="text/javascript" language="javascript"></script>
         <script src="scripts/login_ajax.js" type="text/javascript" language="javascript"></script>
+
         <link href="style/base-style.css" rel="stylesheet" type="text/css" />
+
+	<link rel=”shortcut icon” href=”/favicon.ico” type=”image/x-icon” />
     </head>
 
-
     <body>
-        	<div>    
-	    		<form id="stylized" name="register" method="link" action="register.php">
-	        		<button type="submit">Register</button>
-	    		</form>    	    
-		</div>
-	                
-        	<div id="stylized" class="login-box">    
-            		<form method="post" action="" id="login_form">
-            
-                		<label>Username:</label>
-                		<input  name="username" type="text" id="username" value="" maxlength="20">
-                
-                		<label>Password:</label>
-                		<input name="password" type="password" id="password" value="" maxlength="20">
-                       
-				<input name="Submit" type="submit" id="submit" value="Login" style="margin-left:-10px; height:23px"  /> <span id="msgbox" style="display:none"></span>
-		        </form>
-        	</div>
-    </body>
+	<table border=0 align="center" width=65% height=200>
+		<tr>
+			<div style="height:120px;"></div>
+			<img align="middle" border="0" src="./style/genie1.png" alt="Genie" width="200" height="50" />
+			<div style="height:30px;"></div>
+		</tr>
+		<tr>
+			<td>
+				<div  align="center" id="stylized"  style="color=#A9BCF5;">
+					<h2>The Genie magic lets you:</h2>
+					<p>
+					    <ul>
+						    <li>Access your online desktop from anywhere.
+						    <li>Share it with anybody.
+						    <li>Use it in any device.
+  					    </ul>
+					</p>
+    
+	    				<form style="text-align:left;"id="stylized" name="register" method="link" action="register.php">
+                        	        Create your Genie account -<button type="submit">Register</button>
+	    				</form>    	    
+				</div>
+			</td>
+			<td  width=90% >
+				<div id="stylized" class="login-box">
+            				<form method="post" action="" id="login_form">
+                			<label>Username:</label>
+                			<input  name="username" type="text" id="username" value="" maxlength="20">
 
+                			<label>Password:</label>
+                			<input name="password" type="password" id="password" value="" maxlength="20"> </br>
 
+					<button name="Submit" type="submit" id="stylized">Login</button> 
+                	                <span id="msgbox" style="display:none"></span>
+				        </form>
+        			</div>
+			</td>
+		</tr>
+</table>
 </html>

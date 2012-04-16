@@ -12,7 +12,7 @@ $(document).ready(function()
 		  	$("#msgbox").fadeTo(200,0.1,function()  //start fading the messagebox
 			{ 
 			  //add message and change the class of the box and start fading
-			  $(this).html('Logging in.....').addClass('messageboxok').fadeTo(900,1,
+			  $(this).html('Logging in...').addClass('messageboxok').fadeTo(900,1,
               function()
 			  { 
 			  	 //redirect to webtop
@@ -26,7 +26,7 @@ $(document).ready(function()
 		  	$("#msgbox").fadeTo(200,0.1,function() //start fading the messagebox
 			{ 
 			  //add message and change the class of the box and start fading
-			  $(this).html('Your login detail sucks...').addClass('messageboxerror').fadeTo(900,1);
+			  $(this).html('Invalid username/password...').addClass('messageboxerror').fadeTo(900,1);
 			});		
           }
 				
