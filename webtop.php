@@ -63,6 +63,10 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_16_google.png" />
       Google Search
     </a>
+	<a class="abs icon" style="left:100px;top:180px;" href="#icon_dock_mines">
+      <img src="assets/images/icons/icon_16_mines.png" />
+      Minesweeper
+    </a>
 	
 	
     <div id="window_computer" class="abs window">
@@ -286,6 +290,35 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
+	<div id="window_mines" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_mines.png" />
+            Minesweeper
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <!---<a href="#" class="window_resize"></a>--->
+            <a href="#icon_dock_mines" class="window_close"></a>
+          </span>
+        </div>
+        <div  class="abs window_content">
+		
+       		<h1>minesweeper</h1>
+		<div id="container">
+			<canvas id="imageview" width="800" height="240">
+			</canvas>		
+		</div>
+        
+		</div>
+		<div class="abs window_bottom">
+          By Project Syn3energy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+	
 	
   </div>
   
@@ -392,6 +425,12 @@ if(isset($_GET['logout']))
           Google
         </a>
       </li>
+	   <li id="icon_dock_mines">
+        <a href="#window_mines">
+          <img src="assets/images/icons/icon_16_mines.png" />
+          Minesweeper
+        </a>
+      </li>
 	  
     </ul>
   </div>
@@ -416,7 +455,6 @@ if(isset($_GET['logout']))
     s.parentNode.insertBefore(g, s);
   })(this.document, 'script');
 </script>
-
-
+<script type="text/javascript" src="assets/js/mine.js"></script>
 </body>
 </html>
