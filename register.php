@@ -7,7 +7,8 @@
 <div style="height:120px;"></div>
      <img align="middle" border="0" src="./style/genie1.png" alt="Genie" width="200" height="50" />
      <div style="height:30px;"></div>
-<div id="stylized" class="reg-box"> 
+     
+<div id="stylized" class="login-box"> 
 
 <div id="stylized"> <form id="form" name="form" method="post" action="validate_registration.php">
             

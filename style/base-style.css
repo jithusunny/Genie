@@ -106,3 +106,20 @@ div{border:2px #a1a1a1}
   -webkit-box-shadow: 0 0 5px #81BEF7; 
   -moz-box-shadow: 0 0 5px #81BEF7;
 }
+
+
+.reg-box {
+  position:relative;
+  font-weight:bold;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  margin:auto;
+  width:400px;
+  height: 270px;
+  padding: 1cm;
+  background: #D8D8D8;
+}
