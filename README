@@ -8,7 +8,8 @@ Webtop - http://en.wikipedia.org/wiki/Web_desktop
 index.php - Page the server loads by default.
 register.php - Where new users register.
 checklogin.php - Where the users get to use the WEBTOP.
-validate_registration.php - 
+validate_registration.php - validate username
+webtop.php - the main desktop page
 
 
 [Credits]
@@ -19,3 +20,6 @@ validate_registration.php -
 * Nipun Mohan
 * Vishwajeet Nair
 
+[Bug]
+
+works fine with fire fox. Not compatible with chrome
