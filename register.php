@@ -9,11 +9,7 @@
      <div style="height:30px;"></div>
 <div id="stylized" class="reg-box"> 
 
-
-<h1>Registration Page</h1>
-<h2> Fill up the following to register </h2>
-<div id="stylized" class="login-box">    
-            <form id="form" name="form" method="post" action="validate_registration.php">
+<div id="stylized"> <form id="form" name="form" method="post" action="validate_registration.php">
             
                 <label>Full Name:</label>
                 <input type="text" name="name" id="name">
