@@ -158,8 +158,183 @@ if(isset($_GET['logout']))
             <a href="#icon_dock_music" class="window_close"></a>
           </span>
         </div>
-        <div  class="abs window_content">
+        <div  class="abs window_musicarea">
        		
+			<div class="window_aside align_center">
+            <img src="assets/images/misc/album_cover.jpg" />
+            <br />
+            <em>Title of Album</em>
+					
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th class="shrink">
+				Track
+                  </th>
+                  <th>
+                    Song Name
+                  </th>
+                  <th class="shrink">
+                    Length
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    01
+                  </td>
+                  <td>
+                    Track One
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    02
+                  </td>
+                  <td>
+                    Track Two
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    03
+                  </td>
+                  <td>
+                    Track Three
+                  </td>
+                  <td class="align_right">
+                    4:02
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    04
+                  </td>
+                  <td>
+                    Track Four
+                  </td>
+                  <td class="align_right">
+                    3:47
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    05
+                  </td>
+                  <td>
+                    Track Five
+                  </td>
+                  <td class="align_right">
+                    4:38
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    06
+                  </td>
+                  <td>
+                    Track Six
+                  </td>
+                  <td class="align_right">
+                    3:16
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    07
+                  </td>
+                  <td>
+                    Track Seven
+                  </td>
+                  <td class="align_right">
+                    3:53
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    08
+                  </td>
+                  <td>
+                    Track Eight
+                  </td>
+                  <td class="align_right">
+                    1:41
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    09
+                  </td>
+                  <td>
+                    Track Nine
+                  </td>
+                  <td class="align_right">
+                    3:40
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    10
+                  </td>
+                  <td>
+                    Track Ten
+                  </td>
+                  <td class="align_right">
+                    4:33
+                  </td>
+                </tr>
+                   <br/>
+					
+					<audio controls="controls">
+					<source src="audio/track1.ogg" type="audio/ogg" />
+					</audio>
+					
+              </tbody>
+            </table>
+          </div>
+			
         </div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team

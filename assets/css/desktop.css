@@ -273,14 +273,14 @@ div.ui-resizable-handle {
   bottom: 23px; */
 }
 
-.window_textarea {
+.window_musicarea {
   background: url(../images/gui/window_content.gif) repeat-y;
   line-height: 1.5;
   overflow: auto;
- /* top: 32px;
+  top: 32px;
   left: 1px;
   right: 1px;
-  bottom: 23px; */
+  bottom: 23px; 
 }
 
 .window_aside {
