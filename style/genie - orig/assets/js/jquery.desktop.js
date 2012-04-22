@@ -125,11 +125,8 @@ var JQD = (function($, window, document, undefined) {
             ev.preventDefault();
             ev.stopPropagation();
           }
-          else if (url.match('://')) {
-			$(this).attr('target', '_blank');
-			return true;
-			//ev.preventDefault();
-            //ev.stopPropagation();
+          else {
+            $(this).attr('target', '_blank');
           }
         });
 
@@ -158,7 +155,6 @@ var JQD = (function($, window, document, undefined) {
           JQD.util.clear_active();
           $(this).addClass('active');
         });
-		
 
         // Respond to double-click.
         d.on('dblclick', 'a.icon', function() {
@@ -286,7 +282,7 @@ var JQD = (function($, window, document, undefined) {
       wallpaper: function() {
         // Add wallpaper last, to prevent blocking.
         if ($('#desktop').length) {
-          $('body').prepend('<img id="wallpaper" class="abs" src="assets/images/misc/wall2.jpg" />');
+          $('body').prepend('<img id="wallpaper" class="abs" src="assets/images/misc/wallpaper.jpg" />');
         }
       }
     },
@@ -358,4 +354,3 @@ var JQD = (function($, window, document, undefined) {
 jQuery(document).ready(function() {
   JQD.go();
 });
-

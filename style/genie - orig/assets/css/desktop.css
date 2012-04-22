@@ -2,8 +2,7 @@
 ----------------------------------------------------------------------------------------------------*/
 
 * {
-  /*cursor: default;*/
-  cursor:url(../images/gui/Angry.cur),auto;
+  cursor: default;
 }
 
 html,
@@ -99,10 +98,11 @@ div.ui-resizable-handle {
 
 .icon:hover,
 .icon.ui-draggable-dragging {
-  background-position: 0 0;
-  background-repeat: repeat;
-  border: 1px solid #fff;
+ /* background-position: 0 0;
   padding: 5px 0 5px;
+  background-repeat: repeat;*/
+
+  border: 1px solid #fff;
 }
 
 .icon.ui-draggable-dragging {
@@ -115,10 +115,10 @@ div.ui-resizable-handle {
 .window {
   background: #fff;
   border: 1px solid #000;
-  border-radius: 5px;
+ /* border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
+  -webkit-background-clip: padding-box;*/
   color: #000;
   display: none;
   width: 700px;
@@ -166,7 +166,7 @@ div.ui-resizable-handle {
 }
 
 .window_top {
-  background: #333 url(../images/gui/bar_bottom.png) repeat-x;
+  background: #333;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -189,16 +189,16 @@ div.ui-resizable-handle {
 }
 
 .window_bottom {
-  background: #fff url(../images/gui/bar_top.png) repeat-x left bottom;
+  background: #fff;
   border-top: 1px solid #bbb;
-  border-bottom-left-radius: 5px;
+  /*border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-background-clip: padding-box;
-  font-size: 11px;
+  */font-size: 11px;
   font-weight: bold;
   line-height: 20px;
   overflow: hidden;
@@ -264,23 +264,13 @@ div.ui-resizable-handle {
 }
 
 .window_content {
-  background: url(../images/gui/window_content.gif) repeat-y;
+  background: ;
   line-height: 1.5;
   overflow: auto;
- /* top: 32px;
+  top: 32px;
   left: 1px;
   right: 1px;
-  bottom: 23px; */
-}
-
-.window_textarea {
-  background: url(../images/gui/window_content.gif) repeat-y;
-  line-height: 1.5;
-  overflow: auto;
- /* top: 32px;
-  left: 1px;
-  right: 1px;
-  bottom: 23px; */
+  bottom: 23px;
 }
 
 .window_aside {
@@ -323,7 +313,7 @@ table.data td {
 }
 
 table.data th {
-  background: #fff url(../images/gui/bar_top.png) repeat-x left bottom;
+  background: #fff;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   font-weight: bold;
@@ -344,7 +334,7 @@ table.data tbody tr:nth-child(even) td {
 }
 
 table.data tbody tr.active td {
-  background: #06c url(../images/gui/bar_top_link.png) repeat-x;
+  background: #06c;
   color: #fff;
 }
 
@@ -364,7 +354,7 @@ th.shrink {
 }
 
 #bar_top {
-  background: #fff url(../images/gui/bar_top.png) repeat-x left bottom;
+  background: #fff;
   border-bottom: 1px solid #333;
   color: #999;
   line-height: 25px;
@@ -375,12 +365,12 @@ th.shrink {
 }
 
 #bar_bottom {
-  background: #333 url(../images/gui/bar_bottom.png) repeat-x;
+  background: #333;
   border-top: 1px solid #fff;
   color: #fff;
   font-size: 13px;
   line-height: 30px;
-  opacity: 0.8;
+  opacity: 1;
   overflow: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -404,7 +394,7 @@ th.shrink {
 }
 
 #bar_top li a {
-  background-image: url(../images/gui/bar_top_link.png);
+  background-image: ;
   background-repeat: no-repeat;
   background-position: -99999px -99999px;
   color: #000;
@@ -425,13 +415,13 @@ th.shrink {
   background: #eee;
   border: 1px solid #333;
   border-top-width: 0;
-  border-bottom-left-radius: 5px;
+  /*border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
-  -webkit-background-clip: padding-box;
+  -webkit-background-clip: padding-box;*/
   display: none;
   font-weight: normal;
   margin: 1px 0 0 -1px;
@@ -452,8 +442,8 @@ th.shrink {
 }
 
 #bar_top ul.menu li:last-child a {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+ /* border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;*/
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -462,7 +452,7 @@ th.shrink {
 }
 
 #bar_top ul.menu a:hover {
-  background: #06c url(../images/gui/bar_top_link.png) repeat-x;
+  background: #06c;
   color: #fff;
   text-shadow: none;
 }
@@ -478,10 +468,10 @@ th.shrink {
 }
 
 #bar_bottom a {
-  border-radius: 5px;
+ /* border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
+  -webkit-background-clip: padding-box;*/
   color: #fff;
   overflow: hidden;
   padding: 0 10px;
