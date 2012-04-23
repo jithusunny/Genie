@@ -23,3 +23,8 @@ webtop.php - the main desktop page
 [Bug]
 
 works fine with fire fox. Not compatible with chrome
+
+[DB]
+
+
+Create a database 'genie' and populate with db.sql
