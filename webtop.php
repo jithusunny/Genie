@@ -22,7 +22,11 @@ if(isset($_GET['logout']))
 <title>Genie - JQuery Desktop</title>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/desktop.css" />
-
+<style type="text/css">
+			.movable {
+			    cursor: hand;
+			}
+		</style>
 </head>
 <body>
 <div class="abs" id="wrapper">
@@ -67,6 +71,16 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_16_mines.png" />
       Minesweeper
     </a>
+	
+	<!--- Clock Widget added here --->
+	<div class="widget" >
+	<div id="gfx_holder" style="width:175px;height:175px;">
+	</div>
+	<span id="time"></span>
+	<button id="reset">
+		Reset
+	</button>
+	</div>
 	
 	
     <div id="window_computer" class="abs window">
@@ -613,6 +627,12 @@ if(isset($_GET['logout']))
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/jquery.desktop.js"></script>
+
+<!--- Adding Interactive clock widget The following scripts are necessary--->
+<script  src="widgets/clock/dojoroot/dojo/dojo.js" data-dojo-config="async:true">
+</script>
+<script  src="widgets/clock/src.js">
+</script>
 
 <script>
   !window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery.js"%3E%3C/script%3E'));

@@ -35,6 +35,14 @@ li {
   bottom: auto;
 }
 
+.widget {
+  position: fixed;
+  left:1080px;
+  top:50px;
+  right: auto;
+  bottom: auto;
+  z-index:2;
+}
 .align_center {
   text-align: center;
 }
