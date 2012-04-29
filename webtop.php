@@ -36,8 +36,8 @@ if(isset($_GET['logout']))
       Computer
     </a>
 	<a class="abs icon" style="left:100px;top:20px;" href="#icon_dock_facebook">
-      <img src="assets/images/icons/icon_22_fb.png" />
-      Facebook
+      <img src="assets/images/icons/icon_16_w3.png" />
+      W3Schools
     </a>
 	<a class="abs icon" style="left:20px;top:100px;" href="#icon_dock_textarea">
       <img src="assets/images/icons/icon_16_page.png" />
@@ -56,8 +56,8 @@ if(isset($_GET['logout']))
       Videos
     </a>
 	<a class="abs icon" style="left:20px;top:420px;" href="#icon_dock_twitter">
-      <img src="assets/images/icons/icon_16_twitter.png" />
-      Twitter
+      <img src="assets/images/icons/icon_16_word.png" />
+      Wordpress
     </a>
 	<a class="abs icon" style="left:20px;top:500px;" href="#icon_dock_gmail">
       <img src="assets/images/icons/icon_16_wiki.png" />
@@ -110,8 +110,8 @@ if(isset($_GET['logout']))
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
-            <img src="assets/images/icons/icon_22_fb.png" />
-            Facebook
+            <img src="assets/images/icons/icon_16_w3.png" />
+            W3schools
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
@@ -122,7 +122,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
        		
 			<!---<a href="http://www.facebook.com"><h1>Load Facebook</h1></a>--->
-			<iframe src="http://www.facebook.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.w3schools.com" style="width:697px;height:250px" frameborder="0">
 			</iframe>
 			
         </div>
@@ -410,8 +410,8 @@ if(isset($_GET['logout']))
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
-            <img src="assets/images/icons/icon_16_twitter.png" />
-            Twitter
+            <img src="assets/images/icons/icon_16_word.png" />
+            Wordpress
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
@@ -422,7 +422,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
        		
 			<!---<a href="http://www.twitter.com"><h1>Load Twitter</h1></a>--->
-			<iframe src="http://www.twitter.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.wordpress.com" style="width:697px;height:250px" frameborder="0">
 			</iframe>
 			
 			
@@ -576,8 +576,8 @@ if(isset($_GET['logout']))
       </li>
 	  <li id="icon_dock_facebook">
         <a href="#window_facebook">
-          <img src="assets/images/icons/icon_22_fb.png" />
-          Facebook
+          <img src="assets/images/icons/icon_16_w3.png" />
+          W3schools
         </a>
       </li>
 	  <li id="icon_dock_textarea">
@@ -608,8 +608,8 @@ if(isset($_GET['logout']))
       </li>
 	  <li id="icon_dock_twitter">
         <a href="#window_twitter">
-          <img src="assets/images/icons/icon_16_twitter.png" />
-          Twitter
+          <img src="assets/images/icons/icon_16_word.png" />
+          Wordpress
         </a>
       </li>
 	  <li id="icon_dock_gmail">
