@@ -450,7 +450,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
        		
 			<!---<a href="http://www.gmail.com"><h1>Load Gmail</h1></a>--->
-			<iframe src="http://www.gmail.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.wikipedia.com" style="width:697px;height:250px" frameborder="0">
 			</iframe>
 			
         </div>
