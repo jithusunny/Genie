@@ -60,12 +60,12 @@ if(isset($_GET['logout']))
       Twitter
     </a>
 	<a class="abs icon" style="left:20px;top:500px;" href="#icon_dock_gmail">
-      <img src="assets/images/icons/icon_16_gmail.png" />
-      Gmail
+      <img src="assets/images/icons/icon_16_wiki.png" />
+      Wikipedia
     </a>
 	<a class="abs icon" style="left:100px;top:100px;" href="#icon_dock_google">
-      <img src="assets/images/icons/icon_16_google.png" />
-      Google Search
+      <img src="assets/images/icons/icon_16_ask.png" />
+      Ask Search
     </a>
 	<a class="abs icon" style="left:100px;top:180px;" href="#icon_dock_mines">
       <img src="assets/images/icons/icon_16_mines.png" />
@@ -438,12 +438,12 @@ if(isset($_GET['logout']))
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
-            <img src="assets/images/icons/icon_16_gmail.png" />
-            Gmail
+            <img src="assets/images/icons/icon_16_wiki.png" />
+            Wikipedia
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
-            <a href="#" class="window_resize"></a>
+          <!---  <a href="#" class="window_resize"></a> --->
             <a href="#icon_dock_gmail" class="window_close"></a>
           </span>
         </div>
@@ -465,12 +465,12 @@ if(isset($_GET['logout']))
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
-            <img src="assets/images/icons/icon_16_google.png" />
-            Google
+            <img src="assets/images/icons/icon_16_ask.png" />
+            Ask Search
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
-            <a href="#" class="window_resize"></a>
+           <!--- <a href="#" class="window_resize"></a> --->
             <a href="#icon_dock_google" class="window_close"></a>
           </span>
         </div>
@@ -614,14 +614,14 @@ if(isset($_GET['logout']))
       </li>
 	  <li id="icon_dock_gmail">
         <a href="#window_gmail">
-          <img src="assets/images/icons/icon_16_gmail.png" />
-          Gmail
+          <img src="assets/images/icons/icon_16_wiki.png" />
+          Wiki
         </a>
       </li>
 	   <li id="icon_dock_google">
         <a href="#window_google">
-          <img src="assets/images/icons/icon_16_google.png" />
-          Google
+          <img src="assets/images/icons/icon_16_ask.png" />
+          Ask
         </a>
       </li>
 	   <li id="icon_dock_mines">
