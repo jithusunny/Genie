@@ -82,7 +82,7 @@ if(isset($_GET['logout']))
 	</button>
 	</div>
 	
-	
+	<!--- Windowed div starts here--->
     <div id="window_computer" class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
@@ -121,7 +121,9 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
        		
-			<a href="http://www.facebook.com"><h1>Load Facebook</h1></a>
+			<!---<a href="http://www.facebook.com"><h1>Load Facebook</h1></a>--->
+			<iframe src="http://www.facebook.com" style="width:697px;height:250px" frameborder="0">
+			</iframe>
 			
         </div>
 		<div class="abs window_bottom">
@@ -419,7 +421,10 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
        		
-			<a href="http://www.twitter.com"><h1>Load Twitter</h1></a>
+			<!---<a href="http://www.twitter.com"><h1>Load Twitter</h1></a>--->
+			<iframe src="http://www.twitter.com" style="width:697px;height:250px" frameborder="0">
+			</iframe>
+			
 			
         </div>
 		<div class="abs window_bottom">
@@ -444,7 +449,9 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
        		
-			<a href="http://www.gmail.com"><h1>Load Gmail</h1></a>
+			<!---<a href="http://www.gmail.com"><h1>Load Gmail</h1></a>--->
+			<iframe src="http://www.gmail.com" style="width:697px;height:250px" frameborder="0">
+			</iframe>
 			
         </div>
 		<div class="abs window_bottom">
@@ -469,7 +476,10 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
 		
-       		<a href="http://www.google.com"><h1>Load Google</h1></a>
+       		<!---<a href="http://www.google.com"><h1>Load Google</h1></a>--->
+			<iframe src="http://www.ask.com" style="width:697px;height:250px" frameborder="0">
+			</iframe>
+
         
 		</div>
 		<div class="abs window_bottom">
@@ -651,5 +661,10 @@ if(isset($_GET['logout']))
   })(this.document, 'script');
 </script>
 <script type="text/javascript" src="assets/js/mine.js"></script>
+
+<!--- Adding dialog ---->
+
+
+
 </body>
 </html>

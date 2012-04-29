@@ -272,7 +272,7 @@ div.ui-resizable-handle {
 }
 
 .window_content {
-  background: url(../images/gui/window_content.gif) repeat-y;
+  /*background: url(../images/gui/window_content.gif) repeat-y;*/
   line-height: 1.5;
   overflow: auto;
  /* top: 32px;
