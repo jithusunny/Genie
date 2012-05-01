@@ -1,0 +1,3 @@
+Reading notes, Ok now.
+
+Need to add write support on lose-focus event.

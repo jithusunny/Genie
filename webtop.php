@@ -81,7 +81,13 @@ if(isset($_GET['logout']))
 		Reset
 	</button>
 	</div>
-	
+
+	<div class="note_widget">
+        <textarea id="note" style="color: black; font-weight: bold; background-color: #FFFF00; width:175px;height:175px;"></textarea></br>
+        <a href="#" onclick="javascript:readnote();">Click here to load note.txt</a>
+        </div>
+
+
 	<!--- Windowed div starts here--->
     <div id="window_computer" class="abs window">
       <div class="abs window_inner">
@@ -149,11 +155,9 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
 
-		<!---	<textarea style="width:690px;height:250px">
+			<textarea style="width:690px;height:250px">
 				This is a simple text editor
-			</textarea> --->
-			<iframe src="http://www.editpad.org/" style="width:697px;height:250px" frameborder="0">
-			</iframe>
+			</textarea>
 		
         </div>
 		<div class="abs window_bottom">
@@ -479,7 +483,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
 		
        		<!---<a href="http://www.google.com"><h1>Load Google</h1></a>--->
-			<iframe src="http://www.ask.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.editpad.org/" style="width:1000px;height:800px" frameborder="0">
 			</iframe>
 
         
@@ -639,6 +643,10 @@ if(isset($_GET['logout']))
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/jquery.desktop.js"></script>
+
+<script  src="widgets/note/note.js">
+</script>
+
 
 <!--- Adding Interactive clock widget The following scripts are necessary--->
 <script  src="widgets/clock/dojoroot/dojo/dojo.js" data-dojo-config="async:true">
