@@ -1,3 +1,30 @@
+$(document).ready(function() {
+
+ $("#note_save").click(function() {
+
+    pwd=$("#pwd").val();
+
+   $.ajax({
+      type: "POST",
+      url: "./widgets/note/save_note.php",
+      data: "str="+str,
+      success: function(response)
+     {
+       if(response == 'success') {
+       $('#page').load('webtop.php');
+//          $("#login_response").text("You have logged in successfully!");
+         return true;}
+       else  {
+         $("#login_response").text("Invalid username and/or password.");
+         return false;}
+      }
+   });
+   return false;
+  });
+});
+
+
+
 var http = createRequestObject();
 function createRequestObject() {
    var objAjax;

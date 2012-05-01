@@ -29,6 +29,7 @@ if(isset($_GET['logout']))
 		</style>
 </head>
 <body>
+
 <div class="abs" id="wrapper">
   <div class="abs" id="desktop">
     <a class="abs icon" style="left:20px;top:20px;" href="#icon_dock_computer">
@@ -84,7 +85,6 @@ if(isset($_GET['logout']))
 
 	<div class="note_widget">
         <textarea id="note" style="color: black; font-weight: bold; background-color: #FFFF00; width:175px;height:175px;"></textarea></br>
-        <a href="#" onclick="javascript:readnote();">Click here to load note.txt</a>
         </div>
 
 
@@ -126,7 +126,7 @@ if(isset($_GET['logout']))
           </span>
         </div>
         <div  class="abs window_content">
-       		
+
 			<!---<a href="http://www.facebook.com"><h1>Load Facebook</h1></a>--->
 			<iframe src="http://www.w3schools.com" style="width:697px;height:250px" frameborder="0">
 			</iframe>
