@@ -149,9 +149,11 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
 
-			<textarea style="width:690px;height:250px">
+		<!---	<textarea style="width:690px;height:250px">
 				This is a simple text editor
-			</textarea>
+			</textarea> --->
+			<iframe src="http://www.editpad.org/" style="width:697px;height:250px" frameborder="0">
+			</iframe>
 		
         </div>
 		<div class="abs window_bottom">

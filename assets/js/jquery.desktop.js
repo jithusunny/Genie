@@ -126,8 +126,8 @@ var JQD = (function($, window, document, undefined) {
             ev.stopPropagation();
           }
           else if (url.match('://')) {
-			$(this).attr('target', '_blank');
-			return true;
+			//$(this).attr('target', '_blank');
+			//return true;
 			//ev.preventDefault();
             //ev.stopPropagation();
           }
