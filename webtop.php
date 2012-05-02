@@ -202,7 +202,7 @@ if(isset($_GET['logout']))
               <thead>
                 <tr>
                   <th class="shrink">
-                    &nbsp;
+                    #
                   </th>
                   <th class="shrink">
 				Track
@@ -242,7 +242,7 @@ if(isset($_GET['logout']))
                     Track One
                   </td>
                   <td class="align_right">
-                    4:36
+                    5:00
                   </td>
 				  <td class="align_right">
 				  <button onclick="document.getElementById('player').play()">Play</button>
@@ -257,8 +257,8 @@ if(isset($_GET['logout']))
 				  <button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
 				  </td>
 				  <td class="align_center">
-				  <audio id="player1" controls="controls">
-					<source src="audio/track2.ogg" type="audio/ogg" />
+				  <audio id="player" controls="none">
+					<source src="audio/track1.ogg" type="audio/ogg" />
 					</audio>
 				  </td>
                 </tr>
@@ -273,7 +273,7 @@ if(isset($_GET['logout']))
                     Track Two
                   </td>
                   <td class="align_right">
-                    5:00
+                    4:36
                   </td>
 				  <td class="align_right">
 				  <button onclick="document.getElementById('player1').play()">Play</button>
@@ -288,8 +288,8 @@ if(isset($_GET['logout']))
 				  <button onclick="document.getElementById('player1').volume-=0.1">Volume Down</button>
 				  </td>
 				  <td class="align_center">
-				  <audio id="player" controls="none">
-					<source src="audio/track1.ogg" type="audio/ogg" />
+					<audio id="player1" controls="controls">
+					<source src="audio/track2.ogg" type="audio/ogg" />
 					</audio>
 				  </td>
                 </tr>
