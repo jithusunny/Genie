@@ -619,9 +619,6 @@ if(isset($_GET['logout']))
       <li>
         <a class="menu_trigger" href="#">Genie Home</a>
         <ul class="menu">
-               <li>
-        <a class="menu_trigger" href="#">Genie Home</a>
-        <ul class="menu">
           <li>
             <a class="menu_item" href="#icon_dock_textarea">Text Editor</a>
           </li>

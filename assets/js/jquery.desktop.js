@@ -255,6 +255,24 @@ var JQD = (function($, window, document, undefined) {
 		
 
         // Respond to double-click.
+        d.on('mousedown', 'a.menu_item', function() {
+          // Get the link's target.
+          var x = $(this).attr('href');
+          var y = $(x).find('a').attr('href');
+
+          // Show the taskbar button.
+          if ($(x).is(':hidden')) {
+            $(x).remove().appendTo('#dock');
+            $(x).show('fast');
+          }
+
+          // Bring window to front.
+          JQD.util.window_flat();
+          $(y).addClass('window_stack').show();
+        });
+
+
+        // Respond to double-click.
         d.on('dblclick', 'a.icon', function() {
           // Get the link's target.
           var x = $(this).attr('href');
