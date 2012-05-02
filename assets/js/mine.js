@@ -86,7 +86,7 @@ function win()
 		{	break;}
 	}
 	if(i==64)
-	alert("yoyo.....you have won");
+	alert("Victory!!");
 	w=1;
 
 }
@@ -174,7 +174,7 @@ function ev_canvas(ev)
 		traversed[clic]=1;
 		if(minex[clic]==9)
 		{
-			alert("oops!dats a mine...u lost..");
+			alert("Oops! That is a mine!");
 			w=2;
 		}
 		else if(minex[clic]==0)
