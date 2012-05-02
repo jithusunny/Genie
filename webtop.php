@@ -137,7 +137,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
 
 			<!---<a href="http://www.facebook.com"><h1>Load Facebook</h1></a>--->
-			<iframe src="http://www.w3schools.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.w3schools.com" style="width:870px;height:670px" frameborder="0">
 			</iframe>
 			
         </div>
@@ -402,7 +402,7 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
        		
-	<iframe src="http://www.wikipedia.com" style="width:697px;height:250px" frameborder="0">
+	<iframe src="http://www.wikipedia.com" style="width:870px;height:670px" frameborder="0">
 			</iframe>
 			
         </div>
@@ -429,7 +429,9 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
 		
 
-			<iframe src="http://www.editpad.org/" style="width:1000px;height:800px" frameborder="0">
+			<!---<iframe src="http://www.editpad.org/" style="width:1000px;height:800px" frameborder="0">
+			</iframe>--->
+			<iframe src="http://www.ask.com/" style="width:1000px;height:800px" frameborder="0">
 			</iframe>
 
         
