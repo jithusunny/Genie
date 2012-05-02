@@ -327,6 +327,9 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
 			
+			<iframe src="http://localhost/widgets/imagedisplay/gallery/example-1.html" style="width:1000px;height:670px" frameborder="0">
+			</iframe>
+			
         </div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team
