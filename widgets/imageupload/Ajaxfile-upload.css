@@ -1,0 +1,44 @@
+#upload{
+	margin:18px 3px 0px 3px; padding:2px 2px 2px 6px;
+	font-weight:bold; font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	text-decoration:underline;
+	background:#f2f2f2;
+	color:#730707;
+	border:1px solid #ccc;
+	width:180px;
+	cursor:pointer !important;
+	-moz-border-radius:5px; -webkit-border-radius:5px; 
+	}
+.styleall{
+	margin:18px 3px 0px 3px; padding:2px 2px 2px 6px;
+	font-weight:bold; font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	text-decoration:underline;
+	background:#f2f2f2;
+	color:#730707;
+	border:1px solid #ccc;
+	width:180px;
+	cursor:pointer !important;
+	-moz-border-radius:5px; -webkit-border-radius:5px;
+}
+
+
+.darkbg{
+	background:#ddd !important;
+}
+#status{
+	font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#333; padding:0px;
+}
+#prasad{
+	font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#333; padding:0px;
+}
+ul#files{ list-style:none; padding:0; margin:0; }
+ul#files li{ padding:5px; margin-bottom:2px; width:84px; float:left; margin-right:2px; list-style:none;}
+ul#files li img{ max-width:180px; max-height:150px; }
+.success{background:none repeat scroll 0 0 #FCE9E9; border:1px solid #EAC7C7; padding:2px; text-align:center; width:84px;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:10px; text-align:center; color:#730707;  list-style:none;}
+.error{ background:#f0c6c3; border:1px solid #cc6622; }
+
+.success_horoscope{padding:2px; text-align:left; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:10px; list-style:none;}
