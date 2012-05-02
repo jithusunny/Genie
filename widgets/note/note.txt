@@ -1,3 +1,6 @@
-Reading notes, Ok now. Now the note widget reads notes on load without needing a click.
+Text editor
 
-Need to add write support on lose-focus event.
+File organizing
+
+Fill in windows
+

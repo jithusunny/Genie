@@ -21,5 +21,5 @@ if (!mysql_query($sql))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
+  header("Location:success_reg.html");
 ?>
