@@ -213,6 +213,21 @@ if(isset($_GET['logout']))
                   <th class="shrink">
                     Length
                   </th>
+				  <th class="shrink">
+				  Play
+				  </th>
+				  <th class="shrink">
+				  Pause
+				  </th>
+				  <th class="shrink">
+				  VolUp
+				  </th>
+				  <th class="shrink">
+				  Voldown
+				  </th>
+				  <th class="shrink">
+				  Player
+				  </th>
                 </tr>
               </thead>
               <tbody>
@@ -229,6 +244,23 @@ if(isset($_GET['logout']))
                   <td class="align_right">
                     3:50
                   </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player').play()">Play</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player').pause()">Pause</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+				  </td>
+				  <td class="align_center">
+				  <audio id="player1" controls="controls">
+					<source src="audio/track2.ogg" type="audio/ogg" />
+					</audio>
+				  </td>
                 </tr>
                 <tr>
                   <td>
@@ -243,125 +275,25 @@ if(isset($_GET['logout']))
                   <td class="align_right">
                     3:50
                   </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    03
-                  </td>
-                  <td>
-                    Track Three
-                  </td>
-                  <td class="align_right">
-                    4:02
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    04
-                  </td>
-                  <td>
-                    Track Four
-                  </td>
-                  <td class="align_right">
-                    3:47
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    05
-                  </td>
-                  <td>
-                    Track Five
-                  </td>
-                  <td class="align_right">
-                    4:38
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    06
-                  </td>
-                  <td>
-                    Track Six
-                  </td>
-                  <td class="align_right">
-                    3:16
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    07
-                  </td>
-                  <td>
-                    Track Seven
-                  </td>
-                  <td class="align_right">
-                    3:53
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    08
-                  </td>
-                  <td>
-                    Track Eight
-                  </td>
-                  <td class="align_right">
-                    1:41
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    09
-                  </td>
-                  <td>
-                    Track Nine
-                  </td>
-                  <td class="align_right">
-                    3:40
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="assets/images/icons/icon_16_music.png" />
-                  </td>
-                  <td class="align_center">
-                    10
-                  </td>
-                  <td>
-                    Track Ten
-                  </td>
-                  <td class="align_right">
-                    4:33
-                  </td>
-                </tr>
-                   <br/>
-					
-					<audio controls="controls">
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player1').play()">Play</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player1').pause()">Pause</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player1').volume+=0.1">Volume Up</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('player1').volume-=0.1">Volume Down</button>
+				  </td>
+				  <td class="align_center">
+				  <audio id="player" controls="none">
 					<source src="audio/track1.ogg" type="audio/ogg" />
 					</audio>
-					
+				  </td>
+                </tr>
+                  	
               </tbody>
             </table>
           </div>
