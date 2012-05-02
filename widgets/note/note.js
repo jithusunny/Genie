@@ -38,7 +38,7 @@ function createRequestObject() {
 }
 
 function readnote(){
-   http.open('get','./widgets/note/note.txt');
+   http.open('get','./widgets/note/notes.txt');
    http.onreadystatechange = updateNewContent;
    http.send(null);
    return false;

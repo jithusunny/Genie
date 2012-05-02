@@ -40,6 +40,33 @@ function writenote(php_file) {
 }
 
 
+// sends data to a php file, via POST, and displays the received answer
+function save_file(php_file) {
+  var request =  get_XmlHttp();		// call the function for the XMLHttpRequest instance
+
+  // create pairs index=value with data that must be sent to server
+//  var  the_data = '&note='+document.getElementById('note').value;
+
+  var fname='&fname='+document.getElementById('fname').value;
+  var fcontents='&fcontents='+document.getElementById('fcontents').value;
+
+  var the_data = fname + fcontents
+
+  request.open("POST", php_file, true);			// set the request
+
+  // adds  a header to tell the PHP script to recognize the data as is sent via POST
+  request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  request.send(the_data);		// calls the send() method with datas as parameter
+
+  // Check request status
+  // If the response is received completely, will be transferred to the HTML tag with tagID
+  request.onreadystatechange = function() {
+   
+  }
+  return 1;
+}
+
+
 var http = createRequestObject();
 
 function createRequestObject() {
@@ -55,12 +82,11 @@ function createRequestObject() {
 
 function readnote(){
    var http = createRequestObject();
-   http.open('get','./widgets/note/note.txt');
+   http.open('get','./widgets/note/notes.txt');
    http.onreadystatechange = updateNewContent;
    http.send(null);
    return false;
 }
-
 
 function updateNewContent(){
    if(http.readyState == 4){
