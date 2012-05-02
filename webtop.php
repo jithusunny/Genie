@@ -22,6 +22,7 @@ if(isset($_GET['logout']))
 <title>Genie - JQuery Desktop</title>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/desktop.css" />
+<link rel="stylesheet" href="style/bas-style.css" />
 <style type="text/css">
 			.movable {
 			    cursor: hand;
@@ -85,11 +86,10 @@ if(isset($_GET['logout']))
 
 	<div class="note_widget" >
         <textarea id="note" style="color: black; font-weight: bold; background-color: #FDFD86;   border-color:#FDFD86; font-family:Trebuchet MS,Tahoma,Myriad Pro,Arial,Verdana,sans-serif; font-size:18px;  width:175px;height:175px;"></textarea></br>
-	<button id="update" onclick="writenote('widgets/note/save_note.php');">
+	<button style="background-color:#FDFD86;" id="update" onclick="writenote('widgets/note/save_note.php');">
 		Save
 	</button>
         </div>
-
 
 	<!--- Windowed div starts here--->
     <div id="window_computer" class="abs window">
@@ -143,6 +143,9 @@ if(isset($_GET['logout']))
     </div>
 
 	
+
+
+
 	<div id="window_textarea" class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
@@ -156,12 +159,12 @@ if(isset($_GET['logout']))
             <a href="#icon_dock_textarea" class="window_close"></a>
           </span>
         </div>
-        <div  class="abs window_content">
+        <div class="abs window_content">
 
-			<textarea style="width:690px;height:250px">
-				This is a simple text editor
-			</textarea>
-		
+	
+	Filename:<textarea id='fname' style="height:20px; width:150px;"></textarea>
+	<button onclick="save_file('save_file.php');">Save</button></br>
+        <textarea id="fcontents" style="height:400px; width:685px" ></textarea></br>
         </div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team
@@ -170,6 +173,9 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
+
+
+
 	<div id="window_music" class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
@@ -383,7 +389,7 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
        		
-			<iframe src="http://localhost:8080/widgets/imageupload" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://localhost/widgets/imageupload" style="width:697px;height:250px" frameborder="0">
 			</iframe>
 			
         </div>
@@ -455,14 +461,12 @@ if(isset($_GET['logout']))
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
-          <!---  <a href="#" class="window_resize"></a> --->
             <a href="#icon_dock_gmail" class="window_close"></a>
           </span>
         </div>
         <div  class="abs window_content">
        		
-			<!---<a href="http://www.gmail.com"><h1>Load Gmail</h1></a>--->
-			<iframe src="http://www.wikipedia.com" style="width:697px;height:250px" frameborder="0">
+	<iframe src="http://www.wikipedia.com" style="width:697px;height:250px" frameborder="0">
 			</iframe>
 			
         </div>
@@ -473,7 +477,7 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
-	<div id="window_google" class="abs window">
+	<div id="window_google" style="height: 500px;" class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
@@ -482,13 +486,13 @@ if(isset($_GET['logout']))
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
-           <!--- <a href="#" class="window_resize"></a> --->
+
             <a href="#icon_dock_google" class="window_close"></a>
           </span>
         </div>
         <div  class="abs window_content">
 		
-       		<!---<a href="http://www.google.com"><h1>Load Google</h1></a>--->
+
 			<iframe src="http://www.editpad.org/" style="width:1000px;height:800px" frameborder="0">
 			</iframe>
 
@@ -501,7 +505,7 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
-	<div id="window_mines" class="abs window">
+	<div id="window_mines" class="abs window" style="height=800px;">
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">

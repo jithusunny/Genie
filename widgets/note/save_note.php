@@ -1,15 +1,11 @@
 <?php
 // if data are received via POST, with index of 'test'
 
-$myFile = "note.txt";
+$note = $_POST['note'];
 
+$fh = fopen('notes.txt', 'w') or die("can't open file");
 
-$fh = fopen($myFile, 'w') or die("can't open file");
-
-$stringData = $_POST['note'];
-
-
-fwrite($fh, $stringData);
+fwrite($fh, $note);
 fclose($fh);
 
 return 1;
