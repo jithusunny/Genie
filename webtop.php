@@ -349,11 +349,86 @@ if(isset($_GET['logout']))
             <a href="#icon_dock_disc" class="window_close"></a>
           </span>
         </div>
-        <div  class="abs window_content">
-       		<video width="320" height="240" controls="controls">
-			<source src="video/video1.ogv" type="video/ogg" />
-			</video>
-        </div>
+        <div  class="abs window_musicarea">
+		
+       	<div class="window_aside align_center">
+            <img src="assets/images/misc/album_cover.jpg" />
+            <br />
+            <em>Video Album</em>
+					
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    #
+                  </th>
+                  <th class="shrink">
+				Track
+                  </th>
+                  <th>
+                    Song Name
+                  </th>
+                  <th class="shrink">
+                    Length
+                  </th>
+				  <th class="shrink">
+				  Play
+				  </th>
+				  <th class="shrink">
+				  Pause
+				  </th>
+				  <th class="shrink">
+				  VolUp
+				  </th>
+				  <th class="shrink">
+				  Voldown
+				  </th>
+				  <th class="shrink">
+				  Player
+				  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    01
+                  </td>
+                  <td>
+                    Video One
+                  </td>
+                  <td class="align_right">
+                    1:00
+                  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('video1').play()">Play</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('video1').pause()">Pause</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('video1').volume+=0.1">Volume Up</button>
+				  </td>
+				  <td class="align_right">
+				  <button onclick="document.getElementById('video1').volume-=0.1">Volume Down</button>
+				  </td>
+				  <td class="align_center">
+				  <video id="video1" width="320" height="240" controls="controls">
+					<source src="video/video1.ogv" type="video/ogg" />
+					</video>
+				  </td>
+                </tr>
+                
+                  	
+              </tbody>
+            </table>
+          </div>	
+        
+		</div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team
         </div>
