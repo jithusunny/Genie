@@ -58,8 +58,8 @@ if(isset($_GET['logout']))
       Videos
     </a>
 	<a class="abs icon" style="left:20px;top:420px;" href="#icon_dock_twitter">
-      <img src="assets/images/icons/icon_16_word.png" />
-      Wordpress
+      <img src="assets/images/icons/icon_box.png" />
+      Box - Online store
     </a>
 	<a class="abs icon" style="left:20px;top:500px;" href="#icon_dock_gmail">
       <img src="assets/images/icons/icon_16_wiki.png" />
@@ -365,8 +365,7 @@ if(isset($_GET['logout']))
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
-            <img src="assets/images/icons/icon_16_word.png" />
-            Wordpress
+            Box - Online store
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
@@ -377,7 +376,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_content">
        		
 			<!---<a href="http://www.twitter.com"><h1>Load Twitter</h1></a>--->
-			<iframe src="http://www.wordpress.com" style="width:697px;height:250px" frameborder="0">
+			<iframe src="http://www.box.com" style="width:870px;height:670px" frameborder="0">
 			</iframe>
 			
 			
@@ -621,8 +620,8 @@ if(isset($_GET['logout']))
       </li>
 	  <li id="icon_dock_twitter">
         <a href="#window_twitter">
-          <img src="assets/images/icons/icon_16_word.png" />
-          Wordpress
+          
+          Box - Online Store
         </a>
       </li>
 	  <li id="icon_dock_gmail">
