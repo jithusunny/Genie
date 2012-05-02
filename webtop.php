@@ -85,6 +85,9 @@ if(isset($_GET['logout']))
 
 	<div class="note_widget">
         <textarea id="note" style="color: black; font-weight: bold; background-color: #FFFF00; width:175px;height:175px;"></textarea></br>
+	<button id="update" onclick="writenote('widgets/note/save_note.php');">
+		Save
+	</button>
         </div>
 
 
