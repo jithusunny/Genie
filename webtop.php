@@ -198,7 +198,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_musicarea">
        		
 			<div class="window_aside align_center">
-            <img src="assets/images/misc/album_cover.jpg" />
+            <img src="assets/images/misc/album_cover.jpg" width="120" height="120" />
             <br />
             <em>Title of Album</em>
 					
@@ -619,23 +619,23 @@ if(isset($_GET['logout']))
       <li>
         <a class="menu_trigger" href="#">Genie Home</a>
         <ul class="menu">
+               <li>
+        <a class="menu_trigger" href="#">Genie Home</a>
+        <ul class="menu">
           <li>
-            <a href="#">Programs</a>
+            <a class="menu_item" href="#icon_dock_textarea">Text Editor</a>
           </li>
           <li>
-            <a href="#">Games</a>
+            <a class="menu_item" href="#icon_dock_music">Audio</a>
           </li>
           <li>
-            <a href="#">Audio</a>
+            <a class="menu_item" href="#icon_dock_photo">Albums</a>
           </li>
           <li>
-            <a href="#">Video</a>
+            <a class="menu_item" href="#icon_dock_disc">Video</a>
           </li>
           <li>
-            <a href="#">Social Widgets</a>
-          </li>
-          <li>
-            <a href="logout.php?logout">Logout</a>
+            <a class="menu_item" href="#icon_dock_mines">Minesweeper</a>
           </li>
         </ul>
       </li>

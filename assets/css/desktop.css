@@ -95,6 +95,17 @@ div.ui-resizable-handle {
 /* `Icons
 ----------------------------------------------------------------------------------------------------*/
 
+
+/*new class for top menu items*/
+.top_icon {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+}
+
+
 .icon {
   background: url(../images/gui/trans_white.png) no-repeat -99999px -99999px;
   border-radius: 5px;
