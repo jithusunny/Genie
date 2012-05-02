@@ -347,7 +347,9 @@ if(isset($_GET['logout']))
           </span>
         </div>
         <div  class="abs window_content">
-       		
+       		<video width="320" height="240" controls="controls">
+			<source src="video/video1.ogv" type="video/ogg" />
+			</video>
         </div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team
