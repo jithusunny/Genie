@@ -242,7 +242,7 @@ if(isset($_GET['logout']))
                     Track One
                   </td>
                   <td class="align_right">
-                    3:50
+                    4:36
                   </td>
 				  <td class="align_right">
 				  <button onclick="document.getElementById('player').play()">Play</button>
@@ -273,7 +273,7 @@ if(isset($_GET['logout']))
                     Track Two
                   </td>
                   <td class="align_right">
-                    3:50
+                    5:00
                   </td>
 				  <td class="align_right">
 				  <button onclick="document.getElementById('player1').play()">Play</button>
