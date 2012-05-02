@@ -355,7 +355,7 @@ if(isset($_GET['logout']))
         <div  class="abs window_musicarea">
 		
        	<div class="window_aside align_center">
-            <img src="assets/images/misc/album_cover.jpg" />
+            <img src="assets/images/misc/album_cover.jpg" width="120" height="120"/>
             <br />
             <em>Video Album</em>
 					
