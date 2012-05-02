@@ -170,7 +170,7 @@ if(isset($_GET['logout']))
 	
 	Filename:<textarea id='fname' style="height:20px; width:150px;"></textarea>
 	<button onclick="save_file('save_file.php');">Save</button></br>
-        <textarea id="fcontents" style="height:400px; width:685px" ></textarea></br>
+        <textarea id="fcontents" style="width:870px;height:670px" ></textarea></br>
         </div>
 		<div class="abs window_bottom">
           By Project Syn3energy Team

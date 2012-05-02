@@ -59,7 +59,7 @@ $images = getImages("widgets/imagedisplay/images");
 // display on page 
 foreach($images as $img) 
 { 
-print "hai";
+echo "hai";
 echo "<img class=\"photo\" src=\"{$img['file']}\" {$img['size'][3]} alt=\"\">\n"; 
 }
  ?>
