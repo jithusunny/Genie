@@ -73,6 +73,12 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_16_mines.png" />
       Minesweeper
     </a>
+	<a class="abs icon" style="left:100px;top:260px;" href="#icon_dock_upload">
+      <img src="assets/images/icons/icon_22_network.png" />
+      Upload
+    </a>
+	
+	
 	
 	<!--- Clock Widget added here --->
 	<div class="widget" >
@@ -320,9 +326,6 @@ if(isset($_GET['logout']))
           </span>
         </div>
         <div  class="abs window_content">
-       		
-			<iframe src="http://localhost/widgets/imageupload" style="width:697px;height:250px" frameborder="0">
-			</iframe>
 			
         </div>
 		<div class="abs window_bottom">
@@ -469,6 +472,66 @@ if(isset($_GET['logout']))
     </div>
 	
 	
+	<div id="window_upload" class="abs window" style="height=800px;">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_22_network.png" />
+            Upload
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_upload" class="window_close"></a>
+          </span>
+        </div>
+        <div  class="abs window_musicarea">
+		
+		<div class="window_aside align_center">
+            <img src="assets/images/icons/icon_22_network.png" />
+            <br />
+            <em>Upload content here</em>
+					
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+				Type
+                  </th>
+				  <th class="shrink">
+				  Uploader
+				  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align_center">
+                    Album
+                  </td>
+                  <td class="align_center">
+				  
+				  <iframe src="http://localhost/widgets/imageupload" height="100%" width="100%" scrolling="no" frameborder="0">
+				  </iframe>
+				  
+				  </td>
+                </tr>
+                
+                  	
+              </tbody>
+            </table>
+          </div>
+
+		</div>
+		<div class="abs window_bottom">
+          By Project Syn3energy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+	
+	
   </div>
   
   <div class="abs" id="bar_top">
@@ -578,6 +641,12 @@ if(isset($_GET['logout']))
         <a href="#window_mines">
           <img src="assets/images/icons/icon_16_mines.png" />
           Minesweeper
+        </a>
+      </li>
+	  <li id="icon_dock_upload">
+        <a href="#window_upload">
+          <img src="assets/images/icons/icon_22_network.png" />
+          Upload
         </a>
       </li>
 	  
