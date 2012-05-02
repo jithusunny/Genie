@@ -2,7 +2,6 @@
 // Namespace - Module Pattern.
 //
 
-
 // create the XMLHttpRequest object, according browser
 function get_XmlHttp() {
   // create the variable that will contain the instance of the XMLHttpRequest object (initially with null value)
@@ -92,6 +91,21 @@ function updateNewContent(){
    if(http.readyState == 4){
       document.getElementById('note').innerHTML = http.responseText;
    }
+}
+
+function list_files() {
+  var request =  get_XmlHttp();		
+  request.open("POST", file_lister.php, true);			
+
+  request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  request.send(the_data);		// calls the send() method with datas as parameter
+
+  // Check request status
+  // If the response is received completely, will be transferred to the HTML tag with tagID
+  request.onreadystatechange = function() {
+ document.getElementById('file_list').value = http.responseText;
+  }
+  return 1;
 }
 
 
@@ -254,7 +268,7 @@ var JQD = (function($, window, document, undefined) {
         });
 		
 
-        // Respond to double-click.
+        //Make top menus Respond to double-click.
         d.on('mousedown', 'a.menu_item', function() {
           // Get the link's target.
           var x = $(this).attr('href');
@@ -269,6 +283,7 @@ var JQD = (function($, window, document, undefined) {
           // Bring window to front.
           JQD.util.window_flat();
           $(y).addClass('window_stack').show();
+        $('ul.menu').hide();
         });
 
 
@@ -470,5 +485,8 @@ var JQD = (function($, window, document, undefined) {
 jQuery(document).ready(function() {
   JQD.go();
   readnote();
+  list_files();
+
+  document.getElementById('calc').onload=init_calc('calc');
 });
 
