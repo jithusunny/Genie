@@ -19,7 +19,7 @@ if(isset($_GET['logout']))
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
 <meta name="description" content="Genie" />
-<title>Genie - JQuery Desktop</title>
+<title>Genie - A Web Desktop</title>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/desktop.css" />
 <link rel="stylesheet" href="style/bas-style.css" />
@@ -122,7 +122,7 @@ if(isset($_GET['logout']))
           
         </div>
         <div class="abs window_bottom">
-          By Project Syn3energy Team!
+          By Project Syn3rgy Team!
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -137,7 +137,7 @@ if(isset($_GET['logout']))
           </span>
           <span class="float_right">
             <a href="#" class="window_min"></a>
-            <a href="#" class="window_resize"></a>
+            <!---<a href="#" class="window_resize"></a>--->
             <a href="#icon_dock_facebook" class="window_close"></a>
           </span>
         </div>
@@ -149,7 +149,7 @@ if(isset($_GET['logout']))
 			
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -180,7 +180,7 @@ if(isset($_GET['logout']))
         <textarea id="fcontents" style="height:600px; width:840px" ></textarea></br>
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -313,7 +313,7 @@ if(isset($_GET['logout']))
 			
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -339,7 +339,7 @@ if(isset($_GET['logout']))
 			
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -440,7 +440,7 @@ if(isset($_GET['logout']))
         
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -467,7 +467,7 @@ if(isset($_GET['logout']))
 			
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -492,7 +492,7 @@ if(isset($_GET['logout']))
 			
         </div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -522,13 +522,13 @@ if(isset($_GET['logout']))
         
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
-	<div id="window_mines" class="abs window" style="height=800px;">
+	<div id="window_mines" style="height: 400px; width: 600px; " class="abs window" >
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
@@ -551,7 +551,7 @@ if(isset($_GET['logout']))
         
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -579,7 +579,7 @@ if(isset($_GET['logout']))
         
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -607,7 +607,7 @@ if(isset($_GET['logout']))
         
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -667,7 +667,7 @@ if(isset($_GET['logout']))
 
 		</div>
 		<div class="abs window_bottom">
-          By Project Syn3energy Team
+          By Project Syn3rgy Team
         </div>
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
@@ -704,7 +704,7 @@ if(isset($_GET['logout']))
         <a class="menu_trigger" href="#">Credits</a>
         <ul class="menu">
           <li>
-            <a href="#">Project Syn3ergy Team</a>
+            <a href="#">Project Syn3rgy Team</a>
           </li>
         </ul>
       </li>
