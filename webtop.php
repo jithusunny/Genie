@@ -77,7 +77,10 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_22_network.png" />
       Upload
     </a>
-	
+	<a class="abs icon" style="left:100px;top:340px;" href="#icon_dock_calc">
+      <img src="assets/images/icons/icon_16_calc.png" />
+      Calculator
+    </a>
 	
 	
 	<!--- Clock Widget added here --->
@@ -536,7 +539,7 @@ if(isset($_GET['logout']))
         </div>
         <div  class="abs window_content">
 		
-       		<h1>minesweeper</h1>
+       		<h1>Minesweeper</h1>
 		<div id="container">
 			<canvas id="imageview" width="800" height="240">
 			</canvas>		
@@ -549,6 +552,35 @@ if(isset($_GET['logout']))
       </div>
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
+	
+	
+	<div id="window_calc" style="height: 400px; width: 400px; " class="abs window" >
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_calc.png" />
+            Calculator
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <!---<a href="#" class="window_resize"></a>--->
+            <a href="#icon_dock_calc" class="window_close"></a>
+          </span>
+        </div>
+        <div  class="abs window_content">
+		
+				
+       		<iframe src="http://localhost/scripts/calc/calculator.htm" style="width:400px;height:400px" frameborder="0">
+			</iframe>
+        
+		</div>
+		<div class="abs window_bottom">
+          By Project Syn3energy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+	
 	
 	
 	<div id="window_upload" class="abs window" style="height=800px;">
@@ -723,6 +755,12 @@ if(isset($_GET['logout']))
         <a href="#window_upload">
           <img src="assets/images/icons/icon_22_network.png" />
           Upload
+        </a>
+      </li>
+	  <li id="icon_dock_calc">
+        <a href="#window_calc">
+          <img src="assets/images/icons/icon_16_calc.png" />
+          Calculator
         </a>
       </li>
 	  

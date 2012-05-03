@@ -166,8 +166,30 @@ div.ui-resizable-handle {
 overflow:hidden;
 }
 
+.calc {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  color: #000;
+  display: none;
+  width: 400px;
+  height: 400px;
+  top: 30px;
+  left: 120px;
+  z-index: 2;
+overflow:hidden;
+}
+
 .window.window_stack,
 .window.ui-draggable-dragging {
+  z-index: 10;
+}
+
+.calc.window_stack,
+.calc.ui-draggable-dragging {
   z-index: 10;
 }
 
@@ -175,8 +197,17 @@ overflow:hidden;
   opacity: 0.5;
 }
 
+.calc.ui-draggable-dragging {
+  opacity: 0.5;
+}
+
 .window.ui-draggable-dragging .window_content,
 .window.ui-draggable-dragging .window_bottom {
+  display: none;
+}
+
+.calc.ui-draggable-dragging .window_content,
+.calc.ui-draggable-dragging .window_bottom {
   display: none;
 }
 
