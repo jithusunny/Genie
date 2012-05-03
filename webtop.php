@@ -704,7 +704,7 @@ if(isset($_GET['logout']))
         <a class="menu_trigger" href="#">Credits</a>
         <ul class="menu">
           <li>
-            <a href="#">Project Syn3rgy Team</a>
+            <a href="https://github.com/jithusunny/Genie">Project Syn3rgy Team</a>
           </li>
         </ul>
       </li>
@@ -837,7 +837,11 @@ if(isset($_GET['logout']))
 <script type="text/javascript" src="assets/js/mine.js"></script>
 
 <!--- Adding dialog ---->
-
+<script>
+  $(document).ready(function() {
+    $("#dialog").dialog();
+  });
+  </script>
 
 
 </body>
