@@ -1,0 +1,13 @@
+Genie is an efficient & intuitive webtop.
+
+Webtop - http://en.wikipedia.org/wiki/Web_desktop
+
+
+[Credits]
+
+* Anoop Toffy
+* Jithu Sunny
+* K Syam Krishnan
+* Nipun Mohan
+* Vishwajeet Nair
+

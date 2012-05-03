@@ -81,6 +81,10 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_16_calc.png" />
       Calculator
     </a>
+	<a class="abs icon" style="left:100px;top:420px;" href="#icon_dock_gol">
+      <img src="assets/images/icons/icon_16_gol.png" />
+      Game of life
+    </a>
 	
 	
 	<!--- Clock Widget added here --->
@@ -582,6 +586,33 @@ if(isset($_GET['logout']))
     </div>
 	
 	
+	<div id="window_gol" style="height: 600px; width: 900px; " class="abs window" >
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_gol.png" />
+            Game of Life
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <!---<a href="#" class="window_resize"></a>--->
+            <a href="#icon_dock_gol" class="window_close"></a>
+          </span>
+        </div>
+        <div  class="abs window_content">
+		
+				
+       		<iframe src="http://localhost/scripts/gol/gol.htm" style="width:900px;height:700px" frameborder="0">
+			</iframe>
+        
+		</div>
+		<div class="abs window_bottom">
+          By Project Syn3energy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+	
 	
 	<div id="window_upload" class="abs window" style="height=800px;">
       <div class="abs window_inner">
@@ -761,6 +792,12 @@ if(isset($_GET['logout']))
         <a href="#window_calc">
           <img src="assets/images/icons/icon_16_calc.png" />
           Calculator
+        </a>
+      </li>
+	  <li id="icon_dock_gol">
+        <a href="#window_gol">
+          <img src="assets/images/icons/icon_16_gol.png" />
+          Game of Life
         </a>
       </li>
 	  

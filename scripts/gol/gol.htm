@@ -31,7 +31,6 @@ s1.parentNode.insertBefore(s, s1);
  <body> 
   <form> 
    <h1>GENIE's Game of Life in HTML 5</h1> 
-   <span id="info">(<a href="javascript:gameOfLife.showInfo()">info</a>)</span> 
    <input type="button" value="Step" onclick="gameOfLife.step()" /> | 
    <select id="speed" onchange="gameOfLife.changeSpeed(this.value)"> 
     <option value="1000">1 Hz</option> 
@@ -49,39 +48,9 @@ s1.parentNode.insertBefore(s, s1);
    </select> 
    <div id="gridcontrol"></div> 
   </form> 
-  <div id="footer"> 
-   <div style="float: left;"> 
-    <script type="text/javascript">tweetmeme_style = 'compact';tweetmeme_source = 'sftrabbit';</script> 
-    <script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script> 
-    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsixfoottallrabbit.co.uk%2Fgameoflife%2F&amp;layout=button_count&amp;show_faces=false&amp;width=88amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:88px; height:21px;" allowTransparency="true"></iframe> 
-    <a class="DiggThisButton DiggCompact"></a> 
-    <script type="text/javascript">reddit_url = 'http://sixfoottallrabbit.co.uk/gameoflife';</script>
-    <script type="text/javascript" src="http://reddit.com/static/button/button1.js">reddit_url='http://sixfoottallrabbit.co.uk/gameoflife'</script> 
-   </div> 
-   <div style="float: right; margin-top: 4px;"> 
-    Developed by GENIE
-   </div> 
-  </div> 
-  <div id="popup"> 
-   Welcome to GENIE's</a>'s implementation of <a href="http://en.wikipedia.org/wiki/John_Horton_Conway">John Conway</a>'s <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a>, using the HTML 5 canvas element.<br /><br /> 
-   The Game of Life is a <i>cellular automaton</i>, which means that it consists of a grid of cells which can be in one of a finite number of states. Given any state, there are rules that govern what the <i>next state</i> of the grid will be.<br /><br /> 
-   Each cell in a grid can be either <i>dead</i> or <i>alive</i>. To find the next state of the grid, the following rules are observed:<br /> 
-   <ul><li>Any living cell with 0 or 1 neighbours dies, as if by underpopulation</li><li>Any living cell with 4 or more neighbours dies, as if by overpopulation</li><li>Any living cell with 2 or 3 neighbours survives, yay</li><li>Any dead cell with 3 or more neighbours becomes alive, as if by reproduction</li></ul><br /> 
-   You can make some pretty cool patterns just by doodling all over the grid and hitting \'Go\'. Or there are some examples all over the net of clever states. Try importing Gosper\'s <a href="http://en.wikipedia.org/wiki/Gun_%28cellular_automaton%29">Glider Gun</a>:
-   <textarea>{"width":52,"cells":"AAAAABgAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAACIAAAEEAAAEEAAAAgAAACIAAABwAAAAgAAAAAAAAAAAAAHAAAAHAAAAIgAAAAAAAAYwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}</textarea><br /><br /> 
-   <input type="button" value="Thanks!" onclick="gameOfLife.closePopup()" /> 
-  </div> 
-  <div id="content"></div> 
-  <div id="ad"> 
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-6789411983750873";
-/* Game of Life */
-google_ad_slot = "1011962029";
-google_ad_width = 120;
-google_ad_height = 600;
-//-->
-</script>
-
-  </div> 
+  
+ 
+ <div id="content"></div> 
+  
  </body> 
 </html>
