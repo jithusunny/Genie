@@ -118,8 +118,36 @@ if(isset($_GET['logout']))
             <a href="#icon_dock_computer" class="window_close"></a>
           </span>
         </div>
-        <div class="abs window_content">
+        <div class="abs window_musicarea">
           
+		  <div class="window_aside">
+            Directory Display of Created Files
+          </div>
+		  
+		  <div class="window_main">
+		  <?php
+		  // Display directory
+		  
+			// Define the full path to your folder from root
+			$path = "files";
+
+			// Open the folder
+			$dir_handle = @opendir($path) or die("Unable to open $path");
+
+			// Loop through the files
+			while ($file = readdir($dir_handle)) {
+
+			if($file == "." || $file == ".." )
+
+				continue;
+			echo "<a href=\"$file\">$file</a><br />";
+
+			}
+			// Close
+			closedir($dir_handle);
+		  ?>
+		  
+		  </div>
         </div>
         <div class="abs window_bottom">
           By Project Syn3rgy Team!
