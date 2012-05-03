@@ -85,7 +85,10 @@ if(isset($_GET['logout']))
       <img src="assets/images/icons/icon_16_gol.png" />
       Game of life
     </a>
-	
+	<a class="abs icon" style="left:100px;top:500px;" href="#icon_dock_snake">
+      <img src="assets/images/icons/icon_16_snake.png" />
+      Snake
+    </a>
 	
 	<!--- Clock Widget added here --->
 	<div class="widget" >
@@ -613,6 +616,33 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
+	<div id="window_snake" style="height: 700px; width: 800px; " class="abs window" >
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_snake.png" />
+            Snake
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <!---<a href="#" class="window_resize"></a>--->
+            <a href="#icon_dock_snake" class="window_close"></a>
+          </span>
+        </div>
+        <div  class="abs window_content">
+		
+				
+       		<iframe src="http://localhost/scripts/snake/snake.html" style="width:800px;height:700px" frameborder="0">
+			</iframe>
+        
+		</div>
+		<div class="abs window_bottom">
+          By Project Syn3rgy Team
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+	
 	
 	<div id="window_gol" style="height: 600px; width: 900px; " class="abs window" >
       <div class="abs window_inner">
@@ -826,6 +856,12 @@ if(isset($_GET['logout']))
         <a href="#window_gol">
           <img src="assets/images/icons/icon_16_gol.png" />
           Game of Life
+        </a>
+      </li>
+	  <li id="icon_dock_snake">
+        <a href="#window_snake">
+          <img src="assets/images/icons/icon_16_snake.png" />
+          Snake
         </a>
       </li>
 	  

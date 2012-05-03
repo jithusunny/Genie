@@ -1,0 +1,246 @@
+<html id="capture_key_strokes">
+<head>
+       <title>Snake </title>
+</head>
+<body>
+       
+       
+       <span id="snake_game"></span>
+       <script type="text/javascript">
+              
+
+              
+              var setting_resolution = 10;                                  
+              var setting_grid_dimentions_x = 700;                    
+              var setting_grid_dimentions_y = 500;                     
+              var setting_allow_to_hit_self = false;                   
+              var setting_show_grid = false;                          
+              var setting_snake_speed = 35;                            
+              var setting_fixed_tail = false;                            
+              var setting_snake_starting_size = 2;                     
+              
+
+              
+              var snake_position = new Array();                    
+              var direction = 'right';                             
+              var obj_interval = false;                            
+              var apple_position = new Array();                    
+              
+
+
+              function snake_make_movement() {
+			  
+
+                     switch (direction) {
+                            case 'right':       snake_position.unshift(new Array(snake_position[0][0]+1, snake_position[0][1])); break;
+                            case 'left':       snake_position.unshift(new Array(snake_position[0][0]-1, snake_position[0][1])); break;
+                            case 'up':              snake_position.unshift(new Array(snake_position[0][0], snake_position[0][1]-1)); break;
+                            case 'down':       snake_position.unshift(new Array(snake_position[0][0], snake_position[0][1]+1)); break;
+                     }
+
+                     if (setting_fixed_tail == false) {
+
+                            if (apple_position[0] == snake_position[0][0] && apple_position[1] == snake_position[0][1]) {
+
+                                   apple_position = generate_apple_co_ordinates();
+                                   
+
+                                   render_apple();
+
+                                   document.getElementById('total_apples').innerHTML = parseFloat(document.getElementById('total_apples').innerHTML) + 1 ;
+                                   
+                                   } else {
+                                   
+
+                                   var snake_tail_id = get_grid_block_id(snake_position[snake_position.length - 1][0], snake_position[snake_position.length - 1][1]);
+                                   document.getElementById(snake_tail_id).style.backgroundColor = 'white';
+                                   snake_position.pop();
+                                   
+                            }
+                            
+                     }
+                     
+
+                     render_snake();
+                     
+              }
+
+              function get_grid_block_id(x,y) {
+                     return 'grid'+x+'x'+y;
+              }
+              
+
+              function render_snake() {
+                     
+
+
+                     if ((snake_position[0][0] * setting_resolution)  >= setting_grid_dimentions_x) {
+                            reset_snake();
+                            return '';
+                     }
+                     
+
+                     if ((snake_position[0][0] * setting_resolution)  < 0) {
+                            reset_snake();
+                            return '';
+                     }
+                     
+    
+                     if ((snake_position[0][1] * setting_resolution) >= setting_grid_dimentions_y) {
+                            reset_snake();
+                            return '';
+                     }
+                     
+    
+                     if ((snake_position[0][1] * setting_resolution)  < 0) {
+                            reset_snake();
+                            return '';
+                     }
+                     
+                     if (setting_allow_to_hit_self == false) {
+                            
+                      
+                            for (key in snake_position) {
+                           
+                                   if (key != 0) {
+                                
+                                          if (snake_position[0][0] == snake_position[key][0] && snake_position[0][1] == snake_position[key][1]) {
+                                                 reset_snake();
+                                                 return '';
+                                          }
+                                          
+                                   }
+                                   
+                            }
+                            
+                     }
+                     
+
+                     for (key in snake_position) {
+                            document.getElementById(get_grid_block_id(snake_position[key][0],snake_position[key][1])).style.backgroundColor = 'gray';
+                     }
+              }
+
+              function reset_snake() {
+                     clearInterval(obj_interval);
+                     document.getElementById('snake_game').innerHTML = 'Game Over!!! <a href="">Click here to reload :-)</a>';
+              }
+              
+
+              function generate_apple_co_ordinates() {
+                     
+                     var x = Math.floor(Math.random() * (setting_grid_dimentions_x / setting_resolution));
+                     var y = Math.floor(Math.random() * (setting_grid_dimentions_y / setting_resolution));
+                     
+
+
+                     return new Array(x,y);
+                     
+              }
+              
+
+              function render_apple() {
+                     var apple_id = get_grid_block_id(apple_position[0], apple_position[1]);
+                     document.getElementById(apple_id).style.backgroundColor = 'red';
+              }
+
+              
+
+
+              setting_grid_dimentions_x = Math.round(setting_grid_dimentions_x / setting_resolution) * setting_resolution;
+              setting_grid_dimentions_y = Math.round(setting_grid_dimentions_y / setting_resolution) * setting_resolution;
+              
+
+              var x_pos = -1;
+              var y_pos = -1;
+              var html_grid = ''
+              var css_grid = (setting_show_grid == true ? 'border:1px solid black;' : '');
+              for (var counter_y = 0; counter_y < setting_grid_dimentions_y; counter_y += setting_resolution) {
+                     y_pos++;
+                     for (var counter_x = 0; counter_x < setting_grid_dimentions_x; counter_x += setting_resolution) {
+                            x_pos++;
+                            html_grid += "<div style='position:absolute;top:"+(counter_y+10)+"px;left:"+(counter_x+10)+"px;width:"+setting_resolution+"px;height:"+setting_resolution+"px;"+css_grid+"' id='grid"+x_pos+"x"+y_pos+"'>&nbsp;</div>";
+                     }
+                     x_pos = -1;
+              }
+              
+              
+              document.getElementById('snake_game').innerHTML += html_grid + "<div style='position:absolute;top:9px;left:9px;width:"+setting_grid_dimentions_x+";height:"+setting_grid_dimentions_y+";border:1px solid #AAAAAA;'>&nbsp;</div>";
+              document.getElementById('snake_game').innerHTML += "<div style='top:10px;position:absolute;left:"+(setting_grid_dimentions_x + 30)+";'>Apples Eaten: <span id='total_apples'>0</span></div>";
+
+              snake_position[snake_position.length] = new Array(1, 0);       
+              snake_position[snake_position.length] = new Array(0, 0);
+              for (var counter = 1; counter <= setting_snake_starting_size - 2; counter++) {
+                     snake_position[snake_position.length] = new Array(0, counter);
+              }
+              
+
+              render_snake();
+              
+
+              apple_position = generate_apple_co_ordinates();
+              
+
+              render_apple();
+              
+
+              
+              obj_interval = setInterval("snake_make_movement()", setting_snake_speed);
+              
+
+              
+              document.getElementById('capture_key_strokes').onkeydown = function(e) {
+                     
+
+                     var keycode = 0;
+                     if (window.event) {
+                            keycode = e.keyCode;
+                     }
+                     if (e.which) {
+                            keycode = e.which;
+                     }
+                     
+                     
+                     var tmp_direction = '';
+                     switch (keycode) {
+                            case 38: tmp_direction = 'up'; break;
+                            case 40: tmp_direction = 'down'; break;
+                            case 37: tmp_direction = 'left'; break;
+                            case 39: tmp_direction = 'right'; break;
+                     }
+                     
+                    
+                     if (tmp_direction == '') {
+                            return '';
+                     }
+                     
+
+                     switch (tmp_direction) {
+                            case 'right':       future_x = snake_position[0][0]+1;
+                                                 future_y = snake_position[0][1];
+                                                 break;
+                            case 'left':       future_x = snake_position[0][0]-1;
+                                                 future_y = snake_position[0][1];
+                                                 break;
+                            case 'up':              future_x = snake_position[0][0];
+                                                 future_y = snake_position[0][1]-1;
+                                                 break;
+                            case 'down':       future_x = snake_position[0][0];
+                                                 future_y = snake_position[0][1]+1; 
+                                                 break;
+                     }
+                     
+                     
+                     if (future_x == snake_position[1][0] || future_y == snake_position[1][0]) {
+                            return '';
+                     }
+                     
+                     
+                     direction = tmp_direction;
+                     
+              };
+              
+       </script>
+       
+</body>
+</html>
