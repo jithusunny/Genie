@@ -105,7 +105,7 @@ if(isset($_GET['logout']))
         </div>
 
 	<!--- Windowed div starts here--->
-    <div id="window_computer" class="abs window">
+    <div id="window_computer" style="height: 500px;" class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
