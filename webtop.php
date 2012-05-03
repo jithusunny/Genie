@@ -140,7 +140,7 @@ if(isset($_GET['logout']))
 			if($file == "." || $file == ".." )
 
 				continue;
-			echo "<a href=\"$file\">$file</a><br />";
+			echo "<a href=files/$file>$file</a><br />";
 
 			}
 			// Close
