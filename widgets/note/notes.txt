@@ -1,3 +1,1 @@
-Added calculator and Game of life from Syam.
-
-Now modifying credits
+Directory list done.. In a simple way
