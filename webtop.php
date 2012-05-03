@@ -347,7 +347,7 @@ if(isset($_GET['logout']))
       <span class="abs ui-resizable-handle ui-resizable-se"></span>
     </div>
 	
-	<div id="window_photo" class="abs window">
+	<div id="window_photo" style="height: 600px; width: 970px; " class="abs window">
       <div class="abs window_inner">
         <div class="window_top">
           <span class="float_left">
